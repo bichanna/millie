@@ -15,7 +15,7 @@ String millify(
   {
     int precision = 1,
     bool lowercase = false,
-    bool space = true,
+    bool space = false,
   }
 ) {
 
