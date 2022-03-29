@@ -1,5 +1,5 @@
 # Millie
-A package that converts big numbers to what's pleasant to see (an adorable, little girl, perhaps?).
+A Dart package that converts big numbers to what's pleasant to see (an adorable, little girl, perhaps?).
 
 | 🤢 Before | ✨ After |
 | ----------- | ----------- |
