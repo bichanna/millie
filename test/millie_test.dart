@@ -19,7 +19,7 @@ void main() {
   });
 
   group("Converting to Lowercase", () {
-        test('100', () => expect(millify(100, lowercase: true), equals("100")));
+    test('100', () => expect(millify(100, lowercase: true), equals("100")));
     test('thousand', () => expect(millify(1000, lowercase: true), equals("1k")));
     test('million', () => expect(millify(1000000, lowercase: true), equals("1m")));
     test('billion', () => expect(millify(1000000000, lowercase: true), equals("1b")));
