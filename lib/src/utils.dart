@@ -1,4 +1,4 @@
-/// parseNum ensures the value is a number (double) and without range
+/// parseNum ensures the value is a number (double)
 /// and returns the parsed value.
 double parseNum(num value) {
   double val = double.tryParse(value.toString()) ?? double.nan;
@@ -16,7 +16,7 @@ num round(num value, num precision) {
 
   if (value is int || value == value.roundToDouble()) return value.toInt();
 
-  return double.parse(value.toStringAsFixed(precision as int));
+  return double.parse(value.toStringAsFixed(precision));
 }
 
 /// divideTillEnd divides and calls the passed function until `res` is less than 0.
