@@ -18,3 +18,16 @@ num round(num value, num precision) {
 
   return double.parse(value.toStringAsFixed(precision as int));
 }
+
+/// divideTillEnd divides and calls the passed function until `res` is less than 0.
+void divideTillEnd(num value, Function func) {
+  int denom = 1000;
+  while (true) {
+    double res = value / denom;
+    if (res < 1) break;
+    
+    func(res);
+
+    denom *= 1000;
+  }
+}
