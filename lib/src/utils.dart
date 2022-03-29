@@ -2,7 +2,7 @@
 /// and returns the parsed value.
 double parseNum(num value) {
   double val = double.tryParse(value.toString()) ?? double.nan;
-  
+
   if (val.isNaN) throw FormatException("Input value must be a number, not '$value'");
 
   return val;
@@ -25,7 +25,7 @@ void divideTillEnd(num value, Function func) {
   while (true) {
     double res = value / denom;
     if (res < 1) break;
-    
+
     func(res);
 
     denom *= 1000;

@@ -1,7 +1,7 @@
 import './utils.dart';
 
 const List<String> units = [
-  "",  // nothing...
+  "", // nothing...
   "K", // thousand
   "M", // million
   "B", // billion
@@ -11,14 +11,11 @@ const List<String> units = [
 
 /// Converts big numbers to what's pleasant to see (an adorable, little girl, perhaps?)
 String millify(
-  int value,
-  {
-    int precision = 1,
-    bool lowercase = false,
-    bool space = false,
-  }
-) {
-
+  int value, {
+  int precision = 1,
+  bool lowercase = false,
+  bool space = false,
+}) {
   // validate if `value` can be parsed or not
   num val = parseNum(value);
 
@@ -47,9 +44,8 @@ String millify(
   String unit = units.length > unitIndex ? units[unitIndex] : "";
   String suffix = !lowercase ? unit : unit.toLowerCase();
 
-  
   // add a space if the user specified to do so
   String spaceStr = space ? " " : "";
-  
+
   return "$prefix$rounded$spaceStr$suffix";
 }
