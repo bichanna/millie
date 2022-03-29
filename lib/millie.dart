@@ -4,5 +4,3 @@
 library millie;
 
 export 'src/millie_base.dart';
-
-// TODO: Export any libraries intended for clients of this package.
