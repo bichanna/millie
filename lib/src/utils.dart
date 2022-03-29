@@ -14,7 +14,7 @@ num round(num value, num precision) {
 
   if (precision is! int || precision < 0) throw FormatException("Precision must be a positive whole number.");
 
-  if (value is int) return value;
+  if (value is int || value == value.roundToDouble()) return value.toInt();
 
   return double.parse(value.toStringAsFixed(precision as int));
 }
