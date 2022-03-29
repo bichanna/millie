@@ -32,4 +32,11 @@ void main() {
     test('billion', () => expect(millify(1000000000, space: true), equals("1 B")));
     test('trillion', () => expect(millify(1000000000000, space: true), equals("1 T")));
   });
+
+  group("Precision Tests", () {
+    test('thousand', () => expect(millify(1234), equals("1.2K")));
+    test('million', () => expect(millify(1234567), equals("1.2M")));
+    test('billion', () => expect(millify(1234567890, precision: 3), equals("1.235B")));
+    test('trillion', () => expect(millify(1234566000000, precision: 5), equals("1.23457T")));
+  });
 }
