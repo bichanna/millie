@@ -1,6 +1,6 @@
 name: millie
-description: A starting point for Dart libraries or applications.
-version: 1.0.0
+description: Convert big numbers to what's pleasant to see (an adorable, little girl, perhaps?)
+version: 0.1.0
 # homepage: https://www.example.com
 
 environment:
