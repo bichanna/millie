@@ -1,7 +1,9 @@
 name: millie
 description: Convert big numbers to what's pleasant to see (an adorable, little girl, perhaps?)
 version: 0.1.0
-# homepage: https://www.example.com
+homepage: https://github.com/bichanna/millie
+repository: https://github.com/bichanna/millie
+issue_tracker: https://github.com/bichanna/millie/issues
 
 environment:
   sdk: '>=2.16.1 <3.0.0'
