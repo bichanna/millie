@@ -31,7 +31,7 @@ String millify(
   // keep dividing the input value by the digit grouping base (1000)
   // until the number and the unit index are discovered (?).
   int unitIndex = 0;
-  divideTillEnd(value, (double res) {
+  divideTillEnd(val, (double res) {
     val = res;
     unitIndex++;
   });
