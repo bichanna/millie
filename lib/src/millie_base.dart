@@ -36,7 +36,7 @@ String millify(
     unitIndex++;
   });
 
-  // The number is too big that Millie can't handle. So,
+  // The number is too big for Millie to handle. So,
   // Millie just returns it as is.
   if (units.length <= unitIndex) return value.toString();
 
