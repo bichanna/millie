@@ -27,5 +27,12 @@ void main() {
 }
 ```
 
+## Options
+| Name | Type | Default | Description |
+| ----------- | ----------- | ------- | --------- |
+| `precision` | `int` | `1` | Decimal places to round|
+| `lowercase` | `bool` | `false` | Whether to use lowercase abbreviation |
+| `space` | `bool` | `false` | Whether to add a space between the number and the abbreviation |
+
 ## Features and Bugs
 Please file an [issue](https://github.com/bichanna/millie/issues)!
