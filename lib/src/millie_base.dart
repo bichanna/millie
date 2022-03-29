@@ -9,7 +9,7 @@ const List<String> units = [
   "P", // quadrillion
 ];
 
-/// Converts big numbers to what's pleasant to see (a pretty girl, perhaps?)
+/// Converts big numbers to what's pleasant to see (an adorable, little girl, perhaps?)
 String millify(
   int value,
   {
@@ -29,7 +29,7 @@ String millify(
   val = val.abs();
 
   // keep dividing the input value by the digit grouping base (1000)
-  // until the number and the unit index are discovered (?).
+  // until the number and the unit index are found.
   int unitIndex = 0;
   divideTillEnd(val, (double res) {
     val = res;
